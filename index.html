@@ -127,7 +127,7 @@
     <div id="heartsContainer"></div>
 
     <div class="card-container" id="introScreen">
-        <h2 style="color: #ff4d6d; margin-bottom: 10px;">Hello ရည်းစားဟောင်းလေး</h2>
+        <h2 style="color: #ff4d6d; margin-bottom: 10px;">Hello မမ ချီးထုပ်ကလေး</h2>
         <p style="color: #666; font-size: 14px; margin-bottom: 5px;">Click The Heart</p>
         <div class="heart-start-btn" id="startHeartBtn">
             <img src="https://media.tenor.com/Wvf4fg8LJv8AAAAi/sorjo-boss.gif" alt="Heart GIF">
@@ -135,11 +135,11 @@
     </div>
 
     <div class="card-container" id="mainCard" style="display: none;">
-        <h2 id="questionText" style="color: #ff4d6d;">ပြန်လာပေးပါလား?</h2>
+        <h2 id="questionText" style="color: #ff4d6d;">အခုထိ စိတ်ခုနေတုန်းလား?</h2>
         <div class="gif-container"><img id="statusGif" src="https://media.tenor.com/uf4rihPX8ScAAAAi/happy-labour-day.gif"></div>
         <div class="btn-group" id="btnGroup">
-            <button id="yesBtn" class="primary-btn" onclick="handleInteraction(true)">ပြန်လာမယ်</button>
-            <button id="noBtn" class="secondary-btn" onclick="handleInteraction(false)">မလာဘူး</button>
+            <button id="yesBtn" class="primary-btn" onclick="handleInteraction(true)">မခုတော့ဘူး</button>
+            <button id="noBtn" class="secondary-btn" onclick="handleInteraction(false)">ခုတယ်</button>
         </div>
         <div id="sendingStatus">အဖြေများကို ပို့ပေးနေပါသည်... 💌</div>
     </div>
@@ -156,10 +156,10 @@
         const FORMSPREE_URL = "https://formspree.io/f/moednwap"; 
         
         const steps = [
-            { question: "ပြန်လာပေးပါလား", yes: "ပြန်လာမယ်", no: "မလာဘူး", gif: "https://media.tenor.com/uf4rihPX8ScAAAAi/happy-labour-day.gif", type: "shrink" },
-            { question: "အများကြီးသတိရလို့ပါ", yes: "ဟုတ်", no: "မယုံပါဘူး", gif: "https://media.tenor.com/1QTB9AnN7RQAAAAi/peach-goma.gif", type: "run" },
-            { question: "အတည်ပြန်လာမှာလား", yes: "Yes", no: "No no", gif: "https://media1.tenor.com/m/xDxd1bVH4ccAAAAC/peach-peach-cat.gif", type: "fade" },
-            { question: "ချစ်သေးတယ်မလား", yes: "ချစ်တယ်", no: "မချစ်ဘူး", gif: "https://media.tenor.com/7lw6gN-stFQAAAAi/peach-and-goma-peach-triste.gif", type: "fullscreen" }
+            { question: "အခုထိ စိတ်ခုနေတုန်းလား", yes: "မခုတော့ဘူး", no: "ခုတယ်", gif: "https://media.tenor.com/uf4rihPX8ScAAAAi/happy-labour-day.gif", type: "shrink" },
+            { question: "မမက အများကြီးချစ်တယ်နော်", yes: "ဟုတ်", no: "မယုံပါဘူး", gif: "https://media.tenor.com/1QTB9AnN7RQAAAAi/peach-goma.gif", type: "run" },
+            { question: "မမ နားမှာပဲ အမြဲတမ်းနေမယ်မလား", yes: "Yes", no: "No no", gif: "https://media1.tenor.com/m/xDxd1bVH4ccAAAAC/peach-peach-cat.gif", type: "fade" },
+            { question: "မမ ကို ချစ်သေးတယ်မလား", yes: "ချစ်တယ်", no: "မချစ်ဘူး", gif: "https://media.tenor.com/7lw6gN-stFQAAAAi/peach-and-goma-peach-triste.gif", type: "fullscreen" }
         ];
 
         let currentStep = 0, yesScale = 1, noScale = 1, userAnswers = [];
